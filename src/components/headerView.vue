@@ -36,11 +36,12 @@ export default {};
       width: 200px; height: 100%;
       img {
         width: 100%;
+        padding: 10px 0;
       }
     }
     .navbar{
         display: flex; flex-direction: column;
-        margin-left: auto;
+        margin-left: auto; gap: 5px;
         .navTop{
             font-size: 1.2em;
             margin-left: auto;

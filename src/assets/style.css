@@ -1,5 +1,6 @@
+html,body{height: 100%;}
 *{margin: 0; padding: 0; box-sizing: border-box;}
 a:link, a:visited{text-decoration: none; color: #333;}
 li,ul{list-style: none;}
 
-.container{width: 1200px;margin: 0 auto;}
+.container{width: 1400px;margin: 0 auto;}
