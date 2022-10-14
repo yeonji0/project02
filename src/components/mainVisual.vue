@@ -1,23 +1,24 @@
 <template>
 
-  <div class="visualWrap mb-3">
-      <swiper
-      :navigation="true"
-      :modules="modules" class="mySwiper">
-
-        <swiper-slide v-for="(item,i) in swiperView" :key="i"
-        :style="{'background-color':`${item.color}`}"
-        class="p-5"
-        >
-            <div class="txtWrap p-5">
-                <h2 v-html="item.mainTitle"></h2>
-                <p v-html="item.subtitle" class="mb-5"></p>
-            <button class="btn" >자세히보기 <span><i class="fa-solid fa-arrow-right"></i></span></button>
-            </div>
-            <video id="svideo" :src="`img/01mainSlide_video/${item.mVideo}`" autoplay muted loop></video>
-   
-        </swiper-slide>
-      </swiper>
+  <div class="row">
+    <div class="visualWrap col mb-3">
+        <swiper
+        :navigation="true"
+        :modules="modules" class="mySwiper">
+          <swiper-slide v-for="(item,i) in swiperView" :key="i"
+          :style="{'background-color':`${item.color}`}"
+          class="p-5"
+          >
+              <div class="txtWrap p-5">
+                  <h2 v-html="item.mainTitle"></h2>
+                  <p v-html="item.subtitle" class="mb-5"></p>
+              <button class="btn" >자세히보기 <span><i class="fa-solid fa-arrow-right"></i></span></button>
+              </div>
+              <video id="svideo" :src="`img/01mainSlide_video/${item.mVideo}`" autoplay muted loop></video>
+    
+          </swiper-slide>
+        </swiper>
+    </div>
   </div>
 
 </template>
@@ -64,8 +65,8 @@ export default {
             z-index: 9999;
             color:#285E76;
             span{font-weight: bold;}
-            h2{font-size: 4em;padding: 20px 40px;}
-            p{font-size: 1.5em;padding: 0 40px;}
+            h2{font-size: 3vw;padding: 20px 40px;}
+            p{font-size: 1vw;padding: 0 40px;}
             .btn{
                 margin: 0 40px;
                 width: 200px; height: 60px;
