@@ -1,6 +1,6 @@
 <template>
 
-  <div class="visualWrap">
+  <div class="visualWrap mb-3">
       <swiper
       :navigation="true"
       :modules="modules" class="mySwiper">

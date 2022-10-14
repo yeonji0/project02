@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container mb-5">
     <div class="row">
         <div class="col-6 col-lg bnWrap"
         v-for="(item,i) in ibData" :key="i">
