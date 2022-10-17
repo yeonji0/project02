@@ -1,8 +1,8 @@
 <template>
   <header id="header">
-      <h1><img :src="`./img/logo.svg`" alt="" /></h1>
-      <nav class="navbar">
-        <div class="navTop">
+      <h1><img :src="`./img/logo.svg`" alt=""></h1>
+      <div class="navbar">
+        <div class="navTop ">
           <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
           <a href="#"><i class="fa-regular fa-user"></i></a>
           <a href="#"><i class="fa-brands fa-facebook"></i></a>
@@ -19,7 +19,7 @@
                 <li><a href="#">후원하기</a></li>
             </ul>
         </div>
-      </nav>
+      </div>
   </header>
 </template>
 
@@ -29,7 +29,7 @@ export default {};
 
 <style lang="scss">
 #header {
-    width: 1200px; margin: 0 auto; 
+    width: 1400px; margin: 0 auto; 
     display: flex;
 
     h1 {
@@ -62,4 +62,36 @@ export default {};
         }
     }
 }
+
+/********** css responsive **********/
+@media (max-width: 1399px) {
+    
+}
+
+@media (max-width: 1199px) {
+    
+}
+
+@media (max-width: 991px) {
+ #header{
+    width: 100%;
+  }
+  .navbar{
+    flex-direction: row !important;
+    .navMenu{
+      display: none;
+    }
+  }
+
+}
+
+@media (max-width: 767px) {
+ 
+    
+}
+
+@media (max-width: 575px) {
+    
+}
+
 </style>

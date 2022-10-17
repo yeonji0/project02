@@ -73,6 +73,7 @@ export default {
 .mySwiper {
   height: 500px;
   display: flex;
+  h2{font-weight: bold;}
   .slide{display: flex; gap:50px;}
 
 }
@@ -87,5 +88,33 @@ export default {
                 padding: 0 20px;
                 span{margin-left: 20px;}
             }
+}
+
+/********** css responsive **********/
+@media (max-width: 1399px) {
+    
+}
+
+@media (max-width: 1199px) {
+    
+}
+
+@media (max-width: 991px) {
+    .eduWrap{
+      flex-direction: column;
+      gap: 10px;
+      h1{padding: 0 10px;}
+      .menuWrap{
+        li{padding: 0 10px;}
+      }
+    }
+}
+
+@media (max-width: 767px) {
+    
+}
+
+@media (max-width: 575px) {
+    
 }
 </style>
