@@ -10,7 +10,8 @@
     "bootstrap": "^5.2.2",
     "core-js": "^3.8.3",
     "swiper": "^8.4.4",
-    "vue": "^3.2.13"
+    "vue": "^3.2.13",
+    "vue-count-to": "^1.0.13"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~5.0.0",

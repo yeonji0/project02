@@ -144,6 +144,7 @@ export default {
       .txtWrap{
         padding: 0 !important;
         h2{font-size: 2em;}
+        p{margin-bottom: 10px;}
         }
         .btn{
           margin: 0 40px;

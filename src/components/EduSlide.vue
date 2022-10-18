@@ -1,5 +1,6 @@
 <template>
   <div class="container mb-5">
+   
     <div class="eduWrap">
       <h1>JA 교육 프로그램</h1>
       <div class="menuWrap">
@@ -11,6 +12,7 @@
           </ul>
       </div>
     </div>
+    <span class="bg"></span>
 
     <swiper 
     :navigation="true" 
@@ -27,7 +29,6 @@
             <img :src="`./img/03eduProgram/${item.src}`" alt="" class="img-fluid">
         </div>
       </swiper-slide>
-      
     </swiper>
   </div>
 </template>
@@ -56,6 +57,16 @@ export default {
 
 
 <style lang="scss">
+.container{
+  position: relative;
+  padding: 50px 0;
+  }
+.bg{
+  display: block; width: 500px;height: 120%;background: #eee;
+  border-radius: 30px;
+  position: absolute;
+  top: -15%;right: -25%;
+}
 .eduWrap {
   display: flex;
   gap:50px;
@@ -68,13 +79,15 @@ export default {
     }
     
   }
-  
 }
 .mySwiper {
   height: 500px;
   display: flex;
   h2{font-weight: bold;}
   .slide{display: flex; gap:50px;}
+  .imgWrap{
+    img{width: 100%;height: 100%;}
+  }
 
 }
 .txtWrap{
@@ -90,6 +103,7 @@ export default {
             }
 }
 
+
 /********** css responsive **********/
 @media (max-width: 1399px) {
     
@@ -100,6 +114,7 @@ export default {
 }
 
 @media (max-width: 991px) {
+    .bg{display: none;}
     .eduWrap{
       flex-direction: column;
       gap: 10px;
