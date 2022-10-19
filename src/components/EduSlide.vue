@@ -65,13 +65,15 @@ export default {
   display: block; width: 500px;height: 120%;background: #eee;
   border-radius: 30px;
   position: absolute;
-  top: -15%;right: -25%;
+  top: -15%;right: -20%; 
 }
 .eduWrap {
   display: flex;
   gap:50px;
   font-weight: bold;
+ 
   .menuWrap{
+    
     ul{display: flex; padding: 0;height: 100%;}
     li{
         height: 100%; display: flex; justify-content: center; align-items: center;

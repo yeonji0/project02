@@ -10,10 +10,42 @@
             <li>
               <div class="txtWrap">
                 <span></span>
-                <h4>지역네트워크</h4>
-                <p>전국 17개 시도 200개이상의 지역에서 교육하고 있습니다.</p>
+                <div class="conWrap">
+                  <h4>지역네트워크</h4>
+                  <p>전국 17개 시도 200개이상의 지역에서 교육하고 있습니다.</p>
+                </div>
               </div>
-              <h3>200</h3>
+              <h3>+200</h3>
+            </li>
+             <li>
+              <div class="txtWrap">
+                <span></span>
+                <div class="conWrap">
+                  <h4>학교 및 기관</h4>
+                  <p>전국 17개 시도 200개이상의 지역에서 교육하고 있습니다.</p>
+                </div>
+              </div>
+              <h3>+1,000</h3>
+            </li>
+             <li>
+              <div class="txtWrap">
+                <span></span>
+                <div class="conWrap">
+                  <h4>교육진행자</h4>
+                  <p>전국 17개 시도 200개이상의 지역에서 교육하고 있습니다.</p>
+                </div>
+              </div>
+              <h3>+3,000</h3>
+            </li>
+             <li>
+              <div class="txtWrap">
+                <span></span>
+                <div class="conWrap">
+                  <h4>교육 수혜자</h4>
+                  <p>전국 17개 시도 200개이상의 지역에서 교육하고 있습니다.</p>
+                </div>
+              </div>
+              <h3>+90,000</h3>
             </li>
           </ul>
         </div>
@@ -32,16 +64,27 @@ export default {};
   
 }
 .countWrap {
-  display: flex;
   li {
-    display: flex;
-    .txtWrap {
-        width: 100%;
-        span{
+    display: flex; justify-content: center; align-items: center;
+    width: 100%;
+    span{
             display: flex;
-            width: 100%;height: 2px; background: red;
+            width: 610px;height: 10px; background: #fff;
+            border-radius: 10px; margin-top: 10px;;
+            margin-bottom: 10px;
         }
+    .txtWrap {
+        width: 100%; 
+        color:#fff;
+        .conWrap{
+          display: flex;
+          h4{font-size: 1.2em;margin-right: 15px;}
+          p{font-size: 1em;}
+          }
     }
+    h3{
+      font-weight: bold; color: #fff; font-size: 2em;
+      }
   }
 }
 </style>

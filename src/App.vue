@@ -4,6 +4,10 @@
 <icon-banner :ibData="ibData"></icon-banner>
 <edu-slide :eduData="eduData"></edu-slide>
 <count-banner></count-banner>
+<notice-slide
+:notice="notice"
+:story="story"
+:news="news"></notice-slide>
 </template>
 
 <script>
@@ -22,6 +26,12 @@ import eduData from "./data/03eduProgram.js"
 
 import CountBanner from "@/components/CountBanner.vue"
 
+import NoticeSlide from "@/components/NoticeSlide.vue"
+import NoticeSlideTap from "@/components/NoticeSlideTap.vue"
+import notice from "@/data/04notice.js"
+import story from "@/data/05story.js"
+import news from "@/data/06news.js"
+
 export default {
     components:{
         headerView,
@@ -29,13 +39,13 @@ export default {
         IconBanner,
         EduSlide,
         CountBanner,
+        NoticeSlide,
     },
     data(){
        return{
         mslide:mslide,
         ibData:ibData,
         eduData:eduData,
-
        }
     }
 
