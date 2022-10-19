@@ -3,11 +3,8 @@
     <div class="visualWrap col mb-3">
       <swiper
         v-bind="swiperOptions"
-        :cssMode="true"
         :navigation="true"
         :pagination="true"
-        :mousewheel="true"
-        :keyboard="true"
         :modules="modules"
         class="mySwiper"
       >
@@ -16,7 +13,7 @@
           :key="i"
           :style="{ 'background-color': `${item.color}` }"
         >
-          <div class="txtWrap p-5">
+          <div class="txtWrap">
             <h2 v-html="item.mainTitle"></h2>
             <p v-html="item.subtitle" class="mb-5"></p>
             <button class="btn">
@@ -67,13 +64,13 @@ export default {
 .visualWrap {
   width: 100%;
   height: 700px;
+  @media (max-width: 991px) {
+  height: 700px;}
   .mySwiper {
     width: 100%;
     height: 100%;
     position: relative;
-    .swiper-slide {
-      padding: 150px;
-    }
+
     #svideo {
       width: 100%;
       height: 100%;
@@ -81,13 +78,33 @@ export default {
       right: -20%;
       top: 0;
     }
+    @media (max-width: 991px) {
+      #svideo { 
+        right: -20px;
+        top: 100px;
+      }
+      .swiper-slide{overflow: hidden;}
+    }
     .txtWrap {
       position: absolute;
       z-index: 9999;
       color: #285e76;
+      top: 50%;
+      transform: translateY(-50%);
+      left: calc( 50% - 600px );
       span {
         font-weight: bold;
       }
+   
+      }
+
+      @media (max-width: 991px) {
+        .txtWrap{
+          top: 20px; left: 20px;
+          transform: initial;
+        } 
+
+
       h2 {
         font-size: 3vw;
         padding: 20px 40px;
@@ -119,47 +136,5 @@ export default {
     bottom: 0;
   }
 }
-/********** css responsive **********/
-@media (max-width: 1399px) {
-}
 
-@media (max-width: 1199px) {
-}
-
-@media (max-width: 991px) {
-  .visualWrap {
-    width: 100%; height: 600px;
-    
-    .mySwiper{
-      
-      #svideo{
-        right: -20px;
-        top: 100px;
-      }
-    }
-    .swiper{
-      .swiper-slide{
-        padding: 0;
-        overflow: hidden;
-      .txtWrap{
-        padding: 0 !important;
-        h2{font-size: 2em;}
-        p{margin-bottom: 10px;}
-        }
-        .btn{
-          margin: 0 40px;
-        width: 150px;
-        height: 50px;
-        font-size: 0.7em;
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 767px) {
-}
-
-@media (max-width: 575px) {
-}
 </style>

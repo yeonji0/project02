@@ -46,6 +46,9 @@ export default {
         mslide:mslide,
         ibData:ibData,
         eduData:eduData,
+        notice:notice,
+        story:story,
+        news:news,
        }
     }
 

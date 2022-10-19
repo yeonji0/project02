@@ -1,11 +1,11 @@
 <template>
   <div class="container mb-5">
-    <div class="row">
-        <div class="col-6 col-lg bnWrap"
-        v-for="(item,i) in ibData" :key="i">
-        <img :src="`./img/02iconBanner/${item.src}`" alt="" class="w-50 h-50">
-        <h3 v-html="item.title" class="text-center"></h3>
-        <p v-html="item.subtitle" class="text-center"></p>
+    <div class="row  px-3 px-md-0">
+        <div class="col-6 col-md bnWrap  d-md-block"
+        v-for="(item,i) in ibData" :key="i" :class="{'d-none':i==4}">
+        <img :src="`./img/02iconBanner/${item.src}`" alt="" class="h-50 w-50 d-block m-auto">
+        <h3 v-html="item.title" class="text-center d-flex justify-content-center align-items-center" style="height:50px"></h3>
+        <p v-html="item.subtitle" class="text-center px-3  d-flex justify-content-center align-items-center" style="height:50px"></p>
         </div>
     </div>
     

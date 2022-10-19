@@ -1,35 +1,35 @@
 <template>
-  <div class="container mb-5">
-   
-    <div class="eduWrap">
-      <h1>JA 교육 프로그램</h1>
-      <div class="menuWrap">
-          <ul>
-            <li>진로취업</li>
-            <li>경제금융</li>
-            <li>기업가정신</li>
-            <li>디지털 리터러시</li>
-          </ul>
+  <div class="eduWrap">
+    <div class="container mb-5">
+     <span class="bg"></span>
+      <div class="eduWrap">
+        <h1>JA 교육 프로그램</h1>
+        <div class="menuWrap">
+            <ul>
+              <li>진로취업</li>
+              <li>경제금융</li>
+              <li>기업가정신</li>
+              <li>디지털 리터러시</li>
+            </ul>
+        </div>
       </div>
+    
+      <swiper
+      :navigation="true"
+      :modules="modules" class="mySwiper">
+        <swiper-slide v-for="(item,i) in eduData" :key="i" class="slide p-5">
+          <div class="txtWrap p-5">
+              <h2 v-html="item.name" ></h2>
+              <h2 v-html="item.title" class="mb-3"></h2>
+              <p v-html="item.subtitle" class="mb-5"></p>
+              <button class="btn" >자세히보기 <span><i class="fa-solid fa-arrow-right"></i></span></button>
+          </div>
+          <div class="imgWrap">
+              <img :src="`./img/03eduProgram/${item.src}`" alt="" class="img-fluid">
+          </div>
+        </swiper-slide>
+      </swiper>
     </div>
-    <span class="bg"></span>
-
-    <swiper 
-    :navigation="true" 
-    :modules="modules" class="mySwiper">
-
-      <swiper-slide v-for="(item,i) in eduData" :key="i" class="slide p-5">
-        <div class="txtWrap p-5">
-            <h2 v-html="item.name" ></h2>
-            <h2 v-html="item.title" class="mb-3"></h2>
-            <p v-html="item.subtitle" class="mb-5"></p>
-            <button class="btn" >자세히보기 <span><i class="fa-solid fa-arrow-right"></i></span></button>
-        </div>
-        <div class="imgWrap">
-            <img :src="`./img/03eduProgram/${item.src}`" alt="" class="img-fluid">
-        </div>
-      </swiper-slide>
-    </swiper>
   </div>
 </template>
 <script>
@@ -57,16 +57,17 @@ export default {
 
 
 <style lang="scss">
+.eduWrap{overflow: hidden;}
 .container{
   position: relative;
   padding: 50px 0;
-  }
 .bg{
   display: block; width: 500px;height: 120%;background: #eee;
   border-radius: 30px;
   position: absolute;
-  top: -15%;right: -20%; 
+  top: 0;right: calc( 50% - 1000px );
 }
+  }
 .eduWrap {
   display: flex;
   gap:50px;
