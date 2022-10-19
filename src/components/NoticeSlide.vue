@@ -39,7 +39,7 @@ export default {
 .container{
     .menuWrap{
         font-weight: bold;
-        h1{width: 300px;}
+        h1{width: 300px; font-weight: bold;}
         display: flex;
         @media (max-width: 991px) {flex-direction: column;}
         .tabMenu{
