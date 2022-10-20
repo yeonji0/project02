@@ -9,6 +9,8 @@
 :story="story"
 :news="news"></notice-slide>
 <result-view :post="post" :result="result"></result-view>
+<visual-view></visual-view>
+
 </template>
 
 <script>
@@ -36,6 +38,8 @@ import ResultView from "@/components/ResultView.vue"
 import post from "@/data/07post.js"
 import result from "@/data/08result.js"
 
+import VisualView from "@/components/VisualView.vue"
+
 
 export default {
     components:{
@@ -46,6 +50,7 @@ export default {
         CountBanner,
         NoticeSlide,
         ResultView,
+        VisualView,
     },
     data(){
        return{

@@ -32,6 +32,7 @@ export default {
   .contents{
      display: flex;
      position: relative;
+     
      span{
         width: 100%;height: 2px;background: #eee;
         position: absolute;
