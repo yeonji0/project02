@@ -18,7 +18,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .bnWrap{
         display: flex; flex-direction: column;
         justify-content: center; align-items: center;

@@ -27,7 +27,7 @@
 export default {};
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 #header {
     width: 1400px; margin: 0 auto; 
     display: flex;

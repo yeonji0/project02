@@ -1,8 +1,8 @@
 <template>
-  <div class="bannerWrap">
+  <div class="bannerWrap mb-5">
     <div class="container">
-      <div class="row px-5">
-        <div class="col-12 col-md-4 px-3">
+      <div class="row py-5">
+        <div class="col-12 col-md-4">
           <img :src="`./img/banner01.jpg`" alt="" class="img-fluid rounded-5" />
         </div>
         <div class="countWrap col-12 col-md-8">
