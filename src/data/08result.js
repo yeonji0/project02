@@ -1,6 +1,6 @@
 export default [
     {
-      title: "[UJAT 29기] 대학생경제교육봉사단 대구&부산 지역 합격자 발표 및 발대식 일정 안내",
+      title: "[UJAT 29기] 대학생경제교육봉사단 대구&부산 지역 합격자 발표 및 발대식 일정 안",
       date: "2022-08-16",
       href: "javascript:void(0)",
       content:[
