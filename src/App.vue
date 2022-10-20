@@ -8,6 +8,7 @@
 :notice="notice"
 :story="story"
 :news="news"></notice-slide>
+<result-view :post="post" :result="result"></result-view>
 </template>
 
 <script>
@@ -27,10 +28,14 @@ import eduData from "./data/03eduProgram.js"
 import CountBanner from "@/components/CountBanner.vue"
 
 import NoticeSlide from "@/components/NoticeSlide.vue"
-import NoticeSlideTap from "@/components/NoticeSlideTap.vue"
 import notice from "@/data/04notice.js"
 import story from "@/data/05story.js"
 import news from "@/data/06news.js"
+
+import ResultView from "@/components/ResultView.vue"
+import post from "@/data/07post.js"
+import result from "@/data/08result.js"
+
 
 export default {
     components:{
@@ -40,6 +45,7 @@ export default {
         EduSlide,
         CountBanner,
         NoticeSlide,
+        ResultView,
     },
     data(){
        return{
@@ -49,6 +55,8 @@ export default {
         notice:notice,
         story:story,
         news:news,
+        post:post,
+        result:result,
        }
     }
 

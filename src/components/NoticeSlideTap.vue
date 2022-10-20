@@ -51,7 +51,14 @@ export default {
     return {
       modules1: [Navigation,Pagination],
       swiperOptions1:{
-        slidesPerView:3,
+        breakpoints:{
+          1200: {
+            slidesPerView:3,
+          },
+          900: {
+            slidesPerView:2,
+          }
+        },
         spaceBetween:30,
         loop:true,
         observer: true,
