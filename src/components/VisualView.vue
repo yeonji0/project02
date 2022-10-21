@@ -1,8 +1,8 @@
 <template>
-  <div class="visualWrap container-fulid mb-3">
-    <video id="mvideo" :src="`img/mainvideo.mp4`" autoplay muted loop></video>
 
-    <div class="container">
+  
+    <div class="visualWrap mb-3">
+      <video id="mvideo" :src="`img/mainvideo.mp4`" autoplay muted loop></video>
       <div class="txtWrap">
         <h4>우리 청소년들이 미래의 인재로 성장하도록</h4>
         <h2>JA KOREA가 함께합니다.</h2>
@@ -10,8 +10,9 @@
           자세히보기 <span><i class="fa-solid fa-arrow-right"></i></span>
         </button>
       </div>
+
     </div>
-  </div>
+
 </template>
 
 <script>
@@ -20,23 +21,25 @@ export default {};
 
 <style lang="scss" scoped>
 .visualWrap {
-  display: flex;
+  width: 100%;
+  padding-top: 50%;
+  position: relative;
+  overflow: hidden;
   #mvideo {
+    position: absolute;
+    left:50%;top: 50%;
+    transform: translate(-50%,-50%);
     width: 100%;
     height: 100%;
     object-fit: cover;
-    position: relative;
-    z-index: 9 !important;
   }
-  .container {
-    height: 100%;
-    position: absolute;
-    z-index: 99999;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     .txtWrap {
+      position: absolute;
       color: #fff;
+      top: 20%; left: calc(50% - 700px);
+      @media (max-width: 991px) {
+        left:10%;
+        }
       h4 {
         background: #00a2ae;
         font-size: 2em;
@@ -67,5 +70,4 @@ export default {};
       }
     }
   }
-}
 </style>

@@ -10,6 +10,7 @@
 :news="news"></notice-slide>
 <result-view :post="post" :result="result"></result-view>
 <visual-view></visual-view>
+<support-view :supot="supot"></support-view>
 
 </template>
 
@@ -40,18 +41,25 @@ import result from "@/data/08result.js"
 
 import VisualView from "@/components/VisualView.vue"
 
+import SupportView from "@/components/SupportView.vue"
+import supot from "@/data/09support.js"
+
+
+
+
 
 export default {
     components:{
-        headerView,
-        mainVisual,
-        IconBanner,
-        EduSlide,
-        CountBanner,
-        NoticeSlide,
-        ResultView,
-        VisualView,
-    },
+    headerView,
+    mainVisual,
+    IconBanner,
+    EduSlide,
+    CountBanner,
+    NoticeSlide,
+    ResultView,
+    VisualView,
+    SupportView,
+},
     data(){
        return{
         mslide:mslide,
@@ -62,6 +70,8 @@ export default {
         news:news,
         post:post,
         result:result,
+        supot:supot,
+
        }
     }
 
