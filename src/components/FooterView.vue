@@ -2,7 +2,7 @@
  <div class="container-fluid">
     <div class="container">
         <div class="row">
-            <div class="ftTop">
+            <div class="col ftTop">
                 <ul>
                     <li><a href="#!">이용약관</a></li>
                     <li><a href="#!" class="active">개인정보처리방침</a></li>
@@ -35,6 +35,7 @@ export default {
             height: 100%;
             display: flex; align-items: center;
             a{
+                @media (max-width: 991px) {padding: 10px; font-size: 0.8em;}
                 font-weight: bold;
                 padding: 20px;
                 &.active{color: #285F74;}

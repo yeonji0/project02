@@ -35,6 +35,9 @@ export default {
                 padding: 10px;
                 display: flex;
                 color: #aaa;
+                @media (max-width: 991px) {
+                    font-size: 0.8em; padding: 0;
+                }
             }
         }
         .footer{
