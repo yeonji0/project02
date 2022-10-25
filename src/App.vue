@@ -13,6 +13,7 @@
 <support-view :supot="supot"></support-view>
 <news-letter></news-letter>
 <footer-view></footer-view>
+<footer-bottom></footer-bottom>
 
 
 </template>
@@ -50,6 +51,7 @@ import supot from "@/data/09support.js"
 import NewsLetter from "./components/NewsLetter.vue"
 
 import FooterView from "./components/FooterView.vue"
+import FooterBottom from "@/components/FooterBottom.vue"
 
 
 export default {
@@ -64,7 +66,8 @@ export default {
     VisualView,
     SupportView,
     NewsLetter,
-    FooterView
+    FooterView,
+    FooterBottom
 },
     data(){
        return{
