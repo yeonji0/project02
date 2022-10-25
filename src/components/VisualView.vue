@@ -6,7 +6,7 @@
       <div class="txtWrap">
         <h4>우리 청소년들이 미래의 인재로 성장하도록</h4>
         <h2>JA KOREA가 함께합니다.</h2>
-        <button class="vbtn">
+        <button class="btn">
           자세히보기 <span><i class="fa-solid fa-arrow-right"></i></span>
         </button>
       </div>
@@ -55,7 +55,7 @@ export default {};
           font-size: 1.2em;
         }
       }
-      .vbtn {
+      .btn {
         width: 200px;
         height: 60px;
         background: #fff;
@@ -64,6 +64,7 @@ export default {};
         justify-content: center;
         align-items: center;
         padding: 0 20px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.3);
         span {
           margin-left: 20px;
         }

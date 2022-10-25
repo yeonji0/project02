@@ -11,6 +11,9 @@
 <result-view :post="post" :result="result"></result-view>
 <visual-view></visual-view>
 <support-view :supot="supot"></support-view>
+<news-letter></news-letter>
+<footer-view></footer-view>
+
 
 </template>
 
@@ -44,8 +47,9 @@ import VisualView from "@/components/VisualView.vue"
 import SupportView from "@/components/SupportView.vue"
 import supot from "@/data/09support.js"
 
+import NewsLetter from "./components/NewsLetter.vue"
 
-
+import FooterView from "./components/FooterView.vue"
 
 
 export default {
@@ -59,6 +63,8 @@ export default {
     ResultView,
     VisualView,
     SupportView,
+    NewsLetter,
+    FooterView
 },
     data(){
        return{
